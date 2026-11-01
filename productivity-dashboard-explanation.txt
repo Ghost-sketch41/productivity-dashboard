@@ -1,0 +1,165 @@
+Productivity Dashboard Project Explanation
+=========================================
+
+Project Name:
+Productivity Dashboard / FlowDesk
+
+Project Type:
+Single-page React dashboard built with Vite and Tailwind CSS.
+
+Short Description:
+This project is a productivity management web app. It includes a dashboard, task planner, notes section, reminders, and analytics. The app uses local storage to save data in the browser and includes a mock AI service for task suggestions and note summarization.
+
+Main Features:
+1. Dashboard
+   - Shows key productivity summary cards.
+   - Gives a quick overview of tasks and progress.
+
+2. Tasks Page
+   - Add new tasks.
+   - Update task status.
+   - Delete tasks.
+   - Mark tasks as completed.
+   - Supports priority levels such as high, medium, and low.
+
+3. Notes Page
+   - Create notes.
+   - Edit and delete notes.
+   - Save notes locally.
+   - Use AI-style summarization for notes.
+
+4. Reminders Page
+   - Create reminders with date and time.
+   - Filter reminders by upcoming, overdue, done, or all.
+   - Highlight overdue reminders.
+
+5. Analytics Page
+   - Shows weekly task activity.
+   - Displays productivity score.
+   - Shows charts for task data and priorities.
+
+6. Theme Support
+   - Light mode and dark mode support.
+   - Theme state is stored in local storage.
+
+Technology Used:
+- React 18
+- Vite
+- React Router DOM
+- Zustand for state management
+- Recharts for charts
+- Framer Motion for animations
+- React Hot Toast for notifications
+- date-fns for date handling
+- Axios
+- Lucide React icons
+- clsx
+- Tailwind CSS
+
+Installed Packages in package.json:
+Runtime dependencies:
+- react
+- react-dom
+- react-router-dom
+- recharts
+- zustand
+- axios
+- lucide-react
+- framer-motion
+- react-hot-toast
+- date-fns
+- clsx
+
+Development dependencies:
+- @types/react
+- @types/react-dom
+- @vitejs/plugin-react
+- autoprefixer
+- postcss
+- tailwindcss
+- vite
+
+Project Folder Structure:
+- index.html
+- tailwind.config.js
+- postcss.config.js
+- vite.config.js
+- src/
+  - main.jsx
+  - App.jsx
+  - index.css
+  - components/
+  - pages/
+  - hooks/
+  - services/
+  - store/
+
+Important Files:
+- src/main.jsx
+  Starts the React app and wraps it with BrowserRouter.
+
+- src/App.jsx
+  Sets up routing and global toast notifications.
+
+- src/store/useAppStore.js
+  Main Zustand store for tasks, notes, reminders, and theme.
+
+- src/services/aiService.js
+  Mock AI logic for task suggestions and note summarization.
+
+- src/hooks/useAnalytics.js
+  Builds analytics values from stored task data.
+
+How the Project Works:
+1. User opens the app.
+2. React loads the layout and routes.
+3. Sidebar and navbar are shown.
+4. User can move between Dashboard, Tasks, Notes, Reminders, and Analytics.
+5. All data is stored in browser localStorage through Zustand persist.
+6. Analytics reads the task data and generates charts.
+7. Toast messages show success or error feedback.
+
+How to Run This Project Locally:
+1. Install Node.js on your computer.
+2. Extract the zip file.
+3. Open terminal inside the project folder.
+4. Run:
+   npm install
+5. Start the development server:
+   npm run dev
+6. Open the local URL shown in the terminal.
+
+Build Command:
+- npm run build
+
+Preview Production Build:
+- npm run preview
+
+Notes:
+- This project does not include a backend server.
+- Data is saved only in the browser using localStorage.
+- The AI features are mock functions and are not connected to a real AI API yet.
+- If you want real AI support, the mock service in src/services/aiService.js should be replaced with actual API calls.
+
+Installation Summary:
+This project was created using a React + Vite setup and additional frontend packages were installed for routing, state management, animation, charts, icons, notifications, and date handling.
+
+// ============== New Text ==================
+
+👋
+
+🎉
+
+·
+
+⚠
+
+—
+
+🔥
+
+💪
+
+📈
+
+🎉
